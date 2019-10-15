@@ -1,0 +1,52 @@
+d537b4e HEAD@{0}: checkout: moving from feature3 to develop
+d537b4e HEAD@{1}: merge develop: Fast-forward
+6eb0dc9 HEAD@{2}: checkout: moving from develop to feature3
+d537b4e HEAD@{3}: merge feature4: Fast-forward
+4989735 HEAD@{4}: checkout: moving from feature4 to develop
+d537b4e HEAD@{5}: rebase finished: returning to refs/heads/feature4
+d537b4e HEAD@{6}: rebase: HW1-Git: Change index2.html
+bf9b87c HEAD@{7}: rebase: HW1-Git: Add some style inside it
+6eb0dc9 HEAD@{8}: rebase: checkout feature3
+f530050 HEAD@{9}: checkout: moving from feature3 to feature4
+6eb0dc9 HEAD@{10}: checkout: moving from feature4 to feature3
+f530050 HEAD@{11}: checkout: moving from feature3 to feature4
+6eb0dc9 HEAD@{12}: commit: HW1-Git: special commit for conflict
+6eb10ca HEAD@{13}: reset: moving to HEAD^
+c1d22fc HEAD@{14}: checkout: moving from feature4 to feature3
+f530050 HEAD@{15}: checkout: moving from feature3 to feature4
+c1d22fc HEAD@{16}: commit: HW1-Git: Special commit for conflict
+6eb10ca HEAD@{17}: checkout: moving from feature4 to feature3
+f530050 HEAD@{18}: checkout: moving from feature3 to feature4
+6eb10ca HEAD@{19}: checkout: moving from feature4 to feature3
+f530050 HEAD@{20}: checkout: moving from feature3 to feature4
+6eb10ca HEAD@{21}: checkout: moving from feature3 to feature3
+6eb10ca HEAD@{22}: checkout: moving from feature4 to feature3
+f530050 HEAD@{23}: checkout: moving from feature3 to feature4
+6eb10ca HEAD@{24}: checkout: moving from feature4 to feature3
+f530050 HEAD@{25}: checkout: moving from feature3 to feature4
+6eb10ca HEAD@{26}: checkout: moving from feature4 to feature3
+f530050 HEAD@{27}: commit: HW1-Git: Change index2.html
+0748d79 HEAD@{28}: commit: HW1-Git: Add some style inside it
+4989735 HEAD@{29}: checkout: moving from develop to feature4
+4989735 HEAD@{30}: checkout: moving from feature3 to develop
+6eb10ca HEAD@{31}: commit: HW1-Git: Change index2.html add img tag
+691a182 HEAD@{32}: commit: HW1-Git: Add new images in image folder
+4989735 HEAD@{33}: checkout: moving from develop to feature3
+4989735 HEAD@{34}: commit: HW1-Git: Add index2.html
+8de6df9 HEAD@{35}: checkout: moving from HW1-Git to develop
+8de6df9 HEAD@{36}: merge develop: Fast-forward
+9dc3752 HEAD@{37}: checkout: moving from develop to HW1-Git
+8de6df9 HEAD@{38}: merge feature2: Fast-forward
+4fb482a HEAD@{39}: merge feature1: Fast-forward
+8ad9728 HEAD@{40}: checkout: moving from feature2 to develop
+8de6df9 HEAD@{41}: commit: HW1-Git: Change index.html connect style link
+128638f HEAD@{42}: commit: HW1-Git: Add style folder with style
+4fb482a HEAD@{43}: checkout: moving from feature1 to feature2
+4fb482a HEAD@{44}: commit: HW1-Git: Change index.html add img sourse
+721836d HEAD@{45}: commit: HW1-Git: Create img folder and add image
+8ad9728 HEAD@{46}: checkout: moving from develop to feature1
+8ad9728 HEAD@{47}: commit: HW1-Git: Create folder, add empty html file
+9dc3752 HEAD@{48}: checkout: moving from HW1-Git to develop
+9dc3752 HEAD@{49}: checkout: moving from master to HW1-Git
+9dc3752 HEAD@{50}: commit: HW1-Git: Initial commit
+9576db5 HEAD@{51}: clone: from https://github.com/YaroslavPikiner/epam_fe_2019_pikiner.git
