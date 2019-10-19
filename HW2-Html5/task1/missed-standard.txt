@@ -1,0 +1,8 @@
+1. Replaced div with a header because its a title block and semantically correct.
+2. Replaced div with a main because it must contain all the content.
+3. Replaced div with a section because it is a thematic grouping of content.
+4. Replaced div with a footer .
+5. Add audio and video tag after "What we do" block  audio looped , video muted.
+6. Add picture tag
+
+ 
