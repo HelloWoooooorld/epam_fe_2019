@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="first_form form">
+        <form action="#">
+                <h2>Feedback</h2>
+                <fieldset class="feedback">
+                    <legend>Feedback</legend>
+                    <p><label for="firstName">First name</label><input id="firstName" type="text"></p>
+                    <p><label for="eMail">Email</label><input id="eMail" type="email" placeholder="user@user.com"></p>
+                    <p><label for="mainPros">Pros</label><input id="mainPros"  type="text" placeholder="Main pros"></p>
+                    <p><label for="mainCons">Cons</label><input id="mainCons" type="text" placeholder="Main cons"></p>
+                    <p><label for="inputArea">Overview</label><textarea id="inputArea" name="area" cols="40" rows="5"></textarea></p>
+                    <p><label for="ratingInput">Rating</label><input type="number" id="ratingInput"></p>
+                    <p><label for="subNews">Subscribe me to the newsletter</label><input id="subNews" type="checkbox"></p>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+    </section>
+
+    <section class="second_form form">
+            <form action="#">
+                <h2>Autorization</h2>
+                <fieldset>
+                    <legend>Autorization</legend>
+                    <p><label for="authName">First name </label><input id="authName" type="text"></p>
+                    <p><label for="authMain">Email</label><input id="authMain" type="email" placeholder="user@user.com"></p>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+    </section>
+    <section class="first_form form">
+            <form action="#">
+                    <h2>Register</h2>
+                    <fieldset class="feedback">
+                        <legend>Feedback</legend>
+                        <h4>Common:</h4>
+                            <p><label for="regName">Name</label><input id="regName" type="text" placeholder="Jonh"></p>
+                            <p><label for="regSoname">Surname</label><input id="regSoname" type="text" placeholder="Doe"></p>
+                            <p>Gender<input id="genderMale" name="male" type="radio"><label for="genderMale">Male</label><input name="female" id="genderFemale" type="radio"><label for="genderFemale">Female</label></p>
+                        <h4>Adress:</h4>
+                        <p>Country<select name="#">
+                            <option value="">Ukraine</option>
+                            <option value="">USA</option>
+                            <option value="">JAPAN</option>
+                        </select>
+                        </p>
+                        <h4>Other:</h4>
+                            <p><label for="favColor">Favorite color</label><input id="favColor" type="color"></p>
+                            <p><label for="upAvatar">Upload avatar</label><input id="upAvatar" type="file"></p>
+                        <h4>Security:</h4>
+                            <p><label for="firstPass">Password</label><input id="firstPass" type="password" placeholder="Your Password"></p>
+                            <p><label for="secondPass">Repeat Password</label><input id="secondPass" type="password"></p>
+                            <p><label for="regEmail">Email</label><input type="text" id="regEmail" placeholder="Jonh_doe@gmail.com"></p>
+                        <h4></h4>
+                        <div class="sub">
+                            <p class="terms"><input id="regTerm" type="checkbox"><label for="regTerm">A argee the Terms and condition</label></p>
+                            <button>Register</button>
+                        </div>
+                    </fieldset>
+                </form>
+    </section>
+</body>
+</html>

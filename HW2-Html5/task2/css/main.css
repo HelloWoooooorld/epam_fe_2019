@@ -1,0 +1,69 @@
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.form fieldset {
+  border-color: skyblue;
+}
+
+.first_form p {
+  width: 400px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second_form input {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_form input:last-child {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second_form p {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h4 {
+  border-bottom: 2px solid #000;
+}
+
+.btn_block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 75px;
+  height: 25px;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.sub button {
+  margin-top: 10px;
+  height: 30px;
+}
+
+.terms {
+  width: 270px !important;
+}
