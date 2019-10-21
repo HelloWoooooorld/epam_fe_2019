@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  border: none !important;
+}
+
+td {
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
+
+.a_title {
+  width: 250px;
+}
+
+.b_title {
+  width: 500px;
+}
+
+.c_title {
+  width: 500px;
+}
+
+.e_title {
+  width: 100%;
+}
+
+.f_title {
+  width: 100%;
+}
+
+.f_title td {
+  height: 100px;
+}
+
+* {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.main_cell {
+  height: 150px;
+}
+
+.nested_table {
+  width: 100%;
+}
