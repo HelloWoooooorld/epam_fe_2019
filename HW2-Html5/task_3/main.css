@@ -1,0 +1,41 @@
+body {
+  width: 100%;
+  border: none !important;
+}
+
+td {
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
+
+.a_title {
+  width: 25%;
+}
+
+.b_title {
+  width: 40%;
+}
+
+.c_title {
+  width: 40%;
+}
+
+.e_title {
+  width: 100%;
+}
+
+.f_title {
+  width: 100%;
+}
+
+.f_title td {
+  height: 100px;
+}
+
+* {
+  border: 1px solid black;
+  text-align: left;
+}
