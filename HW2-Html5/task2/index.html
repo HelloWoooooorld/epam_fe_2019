@@ -13,14 +13,32 @@
                 <h2>Feedback</h2>
                 <fieldset class="feedback">
                     <legend>Feedback</legend>
-                    <p><label for="firstName">First name</label><input id="firstName" type="text"></p>
-                    <p><label for="eMail">Email</label><input id="eMail" type="email" placeholder="user@user.com"></p>
-                    <p><label for="mainPros">Pros</label><input id="mainPros"  type="text" placeholder="Main pros"></p>
-                    <p><label for="mainCons">Cons</label><input id="mainCons" type="text" placeholder="Main cons"></p>
-                    <p><label for="inputArea">Overview</label><textarea id="inputArea" name="area" cols="40" rows="5"></textarea></p>
-                    <p><label for="ratingInput">Rating</label><input type="number" id="ratingInput"></p>
-                    <p><label for="subNews">Subscribe me to the newsletter</label><input id="subNews" type="checkbox"></p>
-                    <button type="submit">Send</button>
+                    <table >
+                        <tr>
+                            <td><p><label for="firstName">First name</label><input id="firstName" type="text" required ></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><label for="eMail">Email</label><input id="eMail" type="email" placeholder="user@user.com" required ></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><label for="mainPros">Pros</label><input id="mainPros"  type="text" placeholder="Main pros" required ></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><label for="mainCons">Cons</label><input id="mainCons" type="text" placeholder="Main cons" required ></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><label for="inputArea">Overview</label><textarea id="inputArea" name="area" cols="40" rows="5" required ></textarea></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><label for="ratingInput">Rating</label><input type="number" id="ratingInput" required ></p></td>
+                        </tr>
+                        <tr>
+                            <td><div><input id="subNews" type="checkbox"><label for="subNews">Subscribe me to the newsletter</label></div></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit">Send</button></td>
+                        </tr>
+                    </table>
                 </fieldset>
             </form>
     </section>
@@ -30,40 +48,96 @@
                 <h2>Autorization</h2>
                 <fieldset>
                     <legend>Autorization</legend>
-                    <p><label for="authName">First name </label><input id="authName" type="text"></p>
-                    <p><label for="authMain">Email</label><input id="authMain" type="email" placeholder="user@user.com"></p>
-                    <button type="submit">Submit</button>
+                    <table>
+                        <tr>
+                            <td><p><label for="authName">First name </label><input id="authName" type="text" required></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><label for="authMain">Email</label><input id="authMain" type="email" placeholder="user@user.com" required></p></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit">Submit</button></td>
+                        </tr>
+                    </table>
                 </fieldset>
             </form>
     </section>
-    <section class="first_form form">
+    <section class="third__form form">
             <form action="#">
                     <h2>Register</h2>
                     <fieldset class="feedback">
                         <legend>Feedback</legend>
-                        <h4>Common:</h4>
-                            <p><label for="regName">Name</label><input id="regName" type="text" placeholder="Jonh"></p>
-                            <p><label for="regSoname">Surname</label><input id="regSoname" type="text" placeholder="Doe"></p>
-                            <p>Gender<input id="genderMale" name="male" type="radio"><label for="genderMale">Male</label><input name="female" id="genderFemale" type="radio"><label for="genderFemale">Female</label></p>
-                        <h4>Adress:</h4>
-                        <p>Country<select name="#">
-                            <option value="">Ukraine</option>
-                            <option value="">USA</option>
-                            <option value="">JAPAN</option>
-                        </select>
-                        </p>
-                        <h4>Other:</h4>
-                            <p><label for="favColor">Favorite color</label><input id="favColor" type="color"></p>
-                            <p><label for="upAvatar">Upload avatar</label><input id="upAvatar" type="file"></p>
-                        <h4>Security:</h4>
-                            <p><label for="firstPass">Password</label><input id="firstPass" type="password" placeholder="Your Password"></p>
-                            <p><label for="secondPass">Repeat Password</label><input id="secondPass" type="password"></p>
-                            <p><label for="regEmail">Email</label><input type="text" id="regEmail" placeholder="Jonh_doe@gmail.com"></p>
-                        <h4></h4>
-                        <div class="sub">
-                            <p class="terms"><input id="regTerm" type="checkbox"><label for="regTerm">A argee the Terms and condition</label></p>
-                            <button>Register</button>
-                        </div>
+                        <table>
+                            <tr>
+                                <td><h4>Common:</h4></td>
+                            </tr>
+                            <tr>
+                                <td><p><label for="regName">Name</label><input id="regName" type="text" placeholder="Jonh" required></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><label for="regSoname">Surname</label><input id="regSoname" type="text" placeholder="Doe" required></p></td>
+                            </tr>
+                            <tr>
+                                <td class="gender">
+                                    <p>Gender
+                                        <span class="gender_input">
+                                            <input id="genderMale" name="male" type="radio" required>
+                                            <label for="genderMale">Male</label>
+                                            <input name="female" id="genderFemale" type="radio" required>
+                                            <label for="genderFemale">Female</label>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Adress:</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="coutry">
+                                    <p>Country
+                                    <select name="#">
+                                        <option value="">Ukraine</option>
+                                        <option value="">USA</option>
+                                        <option value="">JAPAN</option>
+                                    </select>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h4>Other:</h4></td>
+                            </tr>
+                            <tr>
+                                <td><p><label for="favColor">Favorite color</label><input id="favColor" type="color"></p></td>
+                            </tr>
+                            <tr>
+                                <td> <p><label for="upAvatar">Upload avatar</label><input id="upAvatar" type="file" required></p></td>
+                            </tr>
+                            <tr>
+                                <td><h4>Security:</h4></td>
+                            </tr>
+                            <tr>
+                                <td><p><label for="firstPass">Password</label><input id="firstPass" type="password" placeholder="Your Password" required></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><label for="secondPass">Repeat Password</label><input id="secondPass" type="password" required></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><label for="regEmail">Email</label><input type="email" id="regEmail" placeholder="Jonh_doe@gmail.com" required></p></td>
+                            </tr>
+                            <tr>
+                                <td><h4></h4></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sub">
+                                        <p class="terms"><input id="regTerm" type="checkbox"><label for="regTerm">A argee the Terms and condition</label></p>
+                                        <button>Register</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </fieldset>
                 </form>
     </section>
