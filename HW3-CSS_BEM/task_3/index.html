@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="first__form form">
+        <form action="#">
+                <fieldset class="feedback">
+                    <legend>Feedback</legend>
+                    <p><label for="firstName">First name</label><input id="firstName" type="text" required></p>
+                    <p><label for="eMail">Email</label><input id="eMail" type="email" placeholder="user@user.com" required></p>
+                    <p><label for="mainPros">Pros</label><input id="mainPros"  type="text" placeholder="Main pros" required></p>
+                    <p><label for="mainCons">Cons</label><input id="mainCons" type="text" placeholder="Main cons" required></p>
+                    <p><label for="inputArea">Overview</label><textarea id="inputArea" name="area" cols="40" rows="5"></textarea></p>
+                    <p><label for="ratingInput">Rating</label><input type="number" id="ratingInput" required></p>
+                    <div class="form__arggement">
+                        <input id="subNews" type="checkbox"><label for="subNews">Subscribe me to the newsletter</label>
+                    </div>
+                    <div class="form__btn">
+                        <button type="submit">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+    </section>
+
+    <section class="first__form form">
+            <form action="#">
+                <fieldset>
+                    <legend>Autorization</legend>
+                    <p><label for="authName">First name </label><input id="authName" type="text" required></p>
+                    <p><label for="authMain">Email</label><input id="authMain" type="email" placeholder="user@user.com" required></p>
+                    <div class="form__btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+    </section>
+    <section class="first__form form">
+            <form action="#">
+                    <fieldset class="feedback">
+                        <legend>Registeration</legend>
+                        <h4>Common:</h4>
+                            <p><label for="regName">Name</label><input id="regName" type="text" placeholder="Jonh" required></p>
+                            <p><label for="regSoname">Surname</label><input id="regSoname" type="text" placeholder="Doe" required></p>
+                            <span class="form__name">Gender</span>
+                            <input id="genderMale" name="male" type="radio"><label for="genderMale">Male</label>
+                            <input name="female" id="genderFemale" type="radio"><label for="genderFemale">Female</label>
+                            <p><label for="birth">Date of Birth</label><input id="birth" type="text" placeholder="dd.mm.yyyy" required></p>
+                        <h4>Adress:</h4>
+                            <p class="form__country">Country<select name="#">
+                            <option value="">Select</option>
+                            <option value="">Ukraine</option>
+                            <option value="">USA</option>
+                            <option value="">JAPAN</option>
+                            </select>
+                            </p>
+                        <h4>Other:</h4>
+                            <p><label for="favColor">Favorite color</label><input id="favColor" type="color" ></p>
+                            <p><label for="upAvatar">Upload avatar</label><input id="upAvatar" type="file"></p>
+                        <h4>Security:</h4>
+                            <p><label for="firstPass">Password</label><input id="firstPass" type="password" placeholder="Your Password" required></p>
+                            <p><label for="secondPass">Repeat Password</label><input id="secondPass" type="password" required></p>
+                            <p><label for="regEmail">Email</label><input type="text" id="regEmail" placeholder="Jonh_doe@gmail.com" required></p>
+                        <h4></h4>
+                        <div class="form__arggement">
+                            <input id="regTerm" type="checkbox" required>
+                            <label for="regTerm">A argee the Terms and condition</label>
+                            <button class="form__button">Register</button>
+                        </div>
+                    </fieldset>
+                </form>
+    </section>
+</body>
+</html>
