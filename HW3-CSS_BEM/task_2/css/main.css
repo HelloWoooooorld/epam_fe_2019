@@ -6,13 +6,13 @@
 .icon {
   width: 84px;
   height: 84px;
-  background-image: url(../img/image_2019-10-22_16-58-54.png);
+  background-image: url(../img/sprites.png);
 }
 
 /* facebook */
 
 .icon.icon__fb {
-  background-position: 0 0;
+  background-position: 0 -168px;
   transition: all 1s;
 }
 
@@ -22,14 +22,14 @@
 }
 
 .icon.icon__fb:active {
-  background-position: 0 -168px;
+  background-position: 0 -252px;
   cursor: pointer;
 }
 
 /* flickr */
 
 .icon.icon__flickr {
-  background-position: -84px 0;
+  background-position: -84px -168px;
   transition: all 1s;
 }
 
@@ -39,14 +39,14 @@
 }
 
 .icon.icon__flickr:active {
-  background-position: -84px -168px;
+  background-position: -84px -252px;
   cursor: pointer;
 }
 
 /* dribble */
 
 .icon.icon__dribble {
-  background-position: -168px 0;
+  background-position: -168px -168px;
   transition: all 1s;
 }
 
@@ -56,14 +56,14 @@
 }
 
 .icon.icon__dribble:active {
-  background-position: -168px -168px;
+  background-position: -168px -252px;
   cursor: pointer;
 }
 
 /* google */
 
 .icon.icon__google {
-  background-position: -252px 0;
+  background-position: -252px -168px;
   transition: all 1s;
 }
 
@@ -73,14 +73,14 @@
 }
 
 .icon.icon__google:active {
-  background-position: -252px -168px;
+  background-position: -252px -252px;
   cursor: pointer;
 }
 
 /* linkedIn */
 
 .icon.icon__linkedin {
-  background-position: -336px 0;
+  background-position: -336px -168px;
   transition: all 1s;
 }
 
@@ -90,14 +90,14 @@
 }
 
 .icon.icon__linkedin:active {
-  background-position: -336px -168px;
+  background-position: -336px -252px;
   cursor: pointer;
 }
 
 /* pinterest  */
 
 .icon.icon__pinterest {
-  background-position: -420px 0;
+  background-position: -420px -168px;
   transition: all 1s;
 }
 
@@ -107,14 +107,14 @@
 }
 
 .icon.icon__pinterest:active {
-  background-position: -420px -168px;
+  background-position: -420px -252px;
   cursor: pointer;
 }
 
 /* rssfeed */
 
 .icon.icon__rssfeed {
-  background-position: -504px 0;
+  background-position: -504px -168px;
   transition: all 1s;
 }
 
@@ -124,14 +124,14 @@
 }
 
 .icon.icon__rssfeed:active {
-  background-position: -504px -168px;
+  background-position: -504px -252px;
   cursor: pointer;
 }
 
 /* skype */
 
 .icon.icon__skype {
-  background-position: -588px 0;
+  background-position: -588px -168px;
   transition: all 1s;
 }
 
@@ -141,14 +141,14 @@
 }
 
 .icon.icon__skype:active {
-  background-position: -588px -168px;
+  background-position: -588px -252px;
   cursor: pointer;
 }
 
 /* twetter */
 
 .icon.icon__twetter {
-  background-position: -672px 0;
+  background-position: -672px -168px;
   transition: all 1s;
 }
 
@@ -158,14 +158,14 @@
 }
 
 .icon.icon__twetter:active {
-  background-position: -672px -168px;
+  background-position: -672px -252px;
   cursor: pointer;
 }
 
 /* vimeo  */
 
 .icon.icon__vimeo {
-  background-position: -756px 0;
+  background-position: -756px -168px;
   transition: all 1s;
 }
 
@@ -175,14 +175,14 @@
 }
 
 .icon.icon__vimeo:active {
-  background-position: -756px -168px;
+  background-position: -756px -252px;
   cursor: pointer;
 }
 
 /* youtube */
 
 .icon.icon__youtube {
-  background-position: -840px 0;
+  background-position: -840px -168px;
   transition: all 1s;
 }
 
@@ -192,6 +192,6 @@
 }
 
 .icon.icon__youtube:active {
-  background-position: -840px -168px;
+  background-position: -840px -252px;
   cursor: pointer;
 }
