@@ -1,0 +1,197 @@
+.sprite {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 84px;
+  height: 84px;
+  background-image: url(../img/image_2019-10-22_16-58-54.png);
+}
+
+/* facebook */
+
+.icon.icon__fb {
+  background-position: 0 0;
+  transition: all 1s;
+}
+
+.icon.icon__fb:hover {
+  background-position: 0 -84px;
+  cursor: pointer;
+}
+
+.icon.icon__fb:active {
+  background-position: 0 -168px;
+  cursor: pointer;
+}
+
+/* flickr */
+
+.icon.icon__flickr {
+  background-position: -84px 0;
+  transition: all 1s;
+}
+
+.icon.icon__flickr:hover {
+  background-position: -84px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__flickr:active {
+  background-position: -84px -168px;
+  cursor: pointer;
+}
+
+/* dribble */
+
+.icon.icon__dribble {
+  background-position: -168px 0;
+  transition: all 1s;
+}
+
+.icon.icon__dribble:hover {
+  background-position: -168px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__dribble:active {
+  background-position: -168px -168px;
+  cursor: pointer;
+}
+
+/* google */
+
+.icon.icon__google {
+  background-position: -252px 0;
+  transition: all 1s;
+}
+
+.icon.icon__google:hover {
+  background-position: -252px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__google:active {
+  background-position: -252px -168px;
+  cursor: pointer;
+}
+
+/* linkedIn */
+
+.icon.icon__linkedin {
+  background-position: -336px 0;
+  transition: all 1s;
+}
+
+.icon.icon__linkedin:hover {
+  background-position: -336px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__linkedin:active {
+  background-position: -336px -168px;
+  cursor: pointer;
+}
+
+/* pinterest  */
+
+.icon.icon__pinterest {
+  background-position: -420px 0;
+  transition: all 1s;
+}
+
+.icon.icon__pinterest:hover {
+  background-position: -420px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__pinterest:active {
+  background-position: -420px -168px;
+  cursor: pointer;
+}
+
+/* rssfeed */
+
+.icon.icon__rssfeed {
+  background-position: -504px 0;
+  transition: all 1s;
+}
+
+.icon.icon__rssfeed:hover {
+  background-position: -504px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__rssfeed:active {
+  background-position: -504px -168px;
+  cursor: pointer;
+}
+
+/* skype */
+
+.icon.icon__skype {
+  background-position: -588px 0;
+  transition: all 1s;
+}
+
+.icon.icon__skype:hover {
+  background-position: -588px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__skype:active {
+  background-position: -588px -168px;
+  cursor: pointer;
+}
+
+/* twetter */
+
+.icon.icon__twetter {
+  background-position: -672px 0;
+  transition: all 1s;
+}
+
+.icon.icon__twetter:hover {
+  background-position: -672px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__twetter:active {
+  background-position: -672px -168px;
+  cursor: pointer;
+}
+
+/* vimeo  */
+
+.icon.icon__vimeo {
+  background-position: -756px 0;
+  transition: all 1s;
+}
+
+.icon.icon__vimeo:hover {
+  background-position: -756px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__vimeo:active {
+  background-position: -756px -168px;
+  cursor: pointer;
+}
+
+/* youtube */
+
+.icon.icon__youtube {
+  background-position: -840px 0;
+  transition: all 1s;
+}
+
+.icon.icon__youtube:hover {
+  background-position: -840px -84px;
+  cursor: pointer;
+}
+
+.icon.icon__youtube:active {
+  background-position: -840px -168px;
+  cursor: pointer;
+}
