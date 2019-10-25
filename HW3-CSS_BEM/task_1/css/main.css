@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+}
+
+html {
+  background-color: lightslategray;
+}
+
+.calendar {
+  margin: 0 auto;
+  width: 490px;
+  height: 500px;
+  background-color: lightseagreen;
+}
+
+.calendar__title {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+.calendar__week {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar__day {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 65px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.calendar__number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 65px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.calendar__date:hover {
+  background-color: #7303fc;
+  color: #fff;
+}
+
+.calendar__date input[type="radio"] {
+  display: none;
+  width: 72px;
+  height: 65px;
+}
+
+.calendar__date--active input[type="radio"]:checked + label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fc03f8;
+  color: #fff;
+  width: 72px;
+  height: 65px;
+}
+
+.calendar__date input[type="radio"]:checked + label:hover {
+  background-color: #96007d;
+}
+
+.calendar__date--unactive {
+  pointer-events: none;
+  background-color: rgb(156, 156, 156);
+  color: #555;
+}
