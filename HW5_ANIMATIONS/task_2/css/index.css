@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: auto;
+  height: 100%;
+}
+
+h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+#toggle,
+#checkbox,
+#accordian,
+#dropDown {
+  display: none;
+}
+
+.header {
+  height: 100px;
+  background-color: rgb(90, 90, 90);
+  border-top: 5px solid lightblue;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav__item {
+  color: #fff;
+  margin-right: 30px;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.nav__item:hover {
+  color: lightblue;
+}
+
+.header__nav {
+  position: relative;
+  left: -100%;
+  padding-top: 40px;
+}
+
+.burger {
+  position: absolute;
+  left: 40px;
+  top: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.burger dl {
+  position: relative;
+  width: 50px;
+  height: 7px;
+  border-radius: 3px;
+  background: lightblue;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle:checked + .burger .top__row {
+  transform: rotate(45deg);
+  margin-top: 20px;
+}
+
+#toggle:checked + .burger .middle__row {
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+#toggle:checked + .burger .bottom__row {
+  transform: rotate(-45deg);
+  margin-top: -22px;
+}
+
+#toggle:checked + .burger + .header__nav {
+  animation: show 2s;
+  animation-fill-mode: forwards;
+}
+
+.main__block {
+  position: absolute;
+}
+
+.main {
+  position: relative;
+  top: 30px;
+}
+
+.main .main__block {
+  left: -100%;
+}
+
+.main .main__block:target:not(:last-child) {
+  left: 42.5%;
+  transition: all 1s;
+}
+
+@keyframes show {
+  90% {
+    left: 10%;
+  }
+
+  95% {
+    left: -5%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+/* checkbox */
+
+.label__custom,
+.label__disabled,
+.label__active {
+  text-align: center;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.checkbox__custom,
+.checkbox__disabled,
+.checkbox__active {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.checkbox__custom {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  background-color: lightgray;
+  outline: none;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.checkbox__custom::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: 0.5s;
+  box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.75);
+}
+
+.checkbox__custom:checked::before {
+  left: 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.checkbox__custom:checked {
+  background-color: rgb(90, 181, 211);
+}
+
+.checkbox__custom:disabled {
+  background-color: gray;
+}
+
+.checkbox__custom:checked:disabled {
+  background-color: rgb(89, 142, 160);
+}
+
+/* accordeon */
+
+.accordian h2 {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.accordion__list {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion__list li {
+  margin-bottom: 1em;
+}
+
+.turn {
+  display: inline-block;
+  width: 150px;
+  height: 20px;
+  background: #fff;
+  border-radius: 3px;
+  color: #000;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.turn:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.accordion__content {
+  position: relative;
+  left: -400%;
+  transition: all 2s;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  width: 300px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.accordion__content--wide {
+  padding-bottom: 50px;
+}
+
+.accordion__list input[type="checkbox"]:checked + div > .accordion__content {
+  left: 0%;
+  transition: ease 1s;
+}
+
+.accordion__list input[type="radio"]:checked + div > .accordion__content {
+  left: 0%;
+  transition: ease 1s;
+}
+
+.main__dropdown {
+  position: absolute;
+  display: block;
+  margin-left: 200px;
+  top: -30px;
+  opacity: 0;
+}
+
+.dropdown__list {
+  list-style-type: none;
+  background-color: rgb(90, 90, 90);
+  width: 200px;
+  height: 117px;
+}
+
+.dropdown__item {
+  padding-top: 10px;
+  list-style-type: none;
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid lightblue;
+}
+
+.main .main__dropdown:target:last-child {
+  left: 42.5%;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.dropdown__item a {
+  color: #fff;
+}
+
+.dropdown--hover:hover {
+  color: lightblue;
+}
