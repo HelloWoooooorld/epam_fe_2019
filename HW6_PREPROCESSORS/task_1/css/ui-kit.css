@@ -1,0 +1,195 @@
+/* stylelint-disable */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../fonts/3966.ttf); }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(../fonts/3955.ttf); }
+
+body {
+  font-family: Roboto-Regular, sans-serif;
+  color: #5d5d5d; }
+
+h1 {
+  font-family: Roboto-Bold;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 54px; }
+
+h2 {
+  font-size: 36px;
+  line-height: 42px; }
+
+h3 {
+  font-family: Roboto-Bold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px; }
+
+h4 {
+  font-size: 20px;
+  line-height: 35px; }
+
+h5 {
+  font-size: 18px;
+  line-height: 21px; }
+
+.tabs {
+  text-decoration: none;
+  list-style-type: none; }
+  .tabs .tab__title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ACA8A8;
+    font-weight: 500;
+    padding: 0 33px 14px 33px;
+    float: left; }
+  .tabs :checked + .tab__title {
+    border-bottom: 3px solid #4e92ff;
+    color: #5D5D5D; }
+  .tabs input[type="radio"] {
+    display: none; }
+
+.btn {
+  width: 180px;
+  height: 49px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #4e92ff; }
+  .btn:hover {
+    background-color: #dc7f47; }
+  .btn:active {
+    background-color: #ac2d2d; }
+
+.checkbox {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .checkbox__item {
+    position: absolute;
+    opacity: 0; }
+    .checkbox__item + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      float: left; }
+    .checkbox__item + label:before {
+      content: '';
+      margin: 0 25px 0 0;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid black;
+      transition: all .3s; }
+    .checkbox__item:hover + label:before {
+      background: #4e92ff; }
+    .checkbox__item:checked + label:before {
+      background: #4e92ff;
+      border: none; }
+    .checkbox__item:disabled + label {
+      color: rgba(78, 146, 255, 0.59);
+      cursor: auto; }
+    .checkbox__item:disabled + label:before {
+      box-shadow: none;
+      background: #ddd; }
+    .checkbox__item:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      background: white;
+      width: 4px;
+      height: 4px;
+      box-shadow: 2px 0 0 white,
+ 4px 0 0 white,
+ 4px -2px 0 white,
+ 4px -4px 0 white,
+ 4px -6px 0 white,
+ 4px -8px 0 white;
+      transform: rotate(45deg); }
+
+.pagination {
+  width: 562px;
+  text-decoration: none;
+  list-style-type: none; }
+  .pagination__title {
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    margin-right: 20px;
+    padding-top: 10px;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #5d5d5d;
+    background-color: #f6f6f6;
+    transition: all .3s; }
+  .pagination__item--arrow {
+    float: left;
+    margin: 0 20px 0;
+    padding-top: 15px;
+    width: 35px;
+    height: 35px;
+    pointer-events: none; }
+  :checked + .pagination__title {
+    background-color: #f05b5b;
+    color: #fff; }
+  .pagination :hover {
+    background-color: #E0E0E0; }
+  .pagination input[type="radio"] {
+    display: none; }

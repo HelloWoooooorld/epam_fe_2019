@@ -1,0 +1,25 @@
+$black: #000;
+$white: #fff;
+$gray: lighten($black, 20%);
+// primary-color
+$blue: #4e92ff;
+$blue--hover: #447fde;
+$blue--active: #3b6fc2;
+// success
+$green: #60cf57;
+$green--hover: #4aba42;
+$green--active: #3da235;
+// checkbox
+$checkbox--primary: #4e92ff;
+$checkbox--secondary: #f89052;
+$checkbox--success: #52be80;
+$checkbox--danger: #f05b5b;
+$checkbox--black: #3c3b3b;
+// checkbox disabled
+$checkbox-black--disabled: rgba(60, 59, 59, 0.59);
+$checkbox-primary--disabled:rgba(78, 146, 255, 0.59);
+$checkbox-secondary--disabled: rgba(246, 167, 120, 0.59);
+$checkbox-success--disabled: rgba(82, 190, 128, 0.59);
+$checkbox-danger--disabled: rgba(240, 91, 91, 0.59);
+
+$veryGood: "Very good";

@@ -1,0 +1,575 @@
+/* stylelint-disable */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  color: #5D5D5D; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../../fonts/3966.ttf); }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../../fonts/3955.ttf); }
+
+body {
+  font-family: "Roboto-Regular", sans-serif; }
+
+h1 {
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 54px; }
+
+h2 {
+  font-size: 36px;
+  line-height: 42px; }
+
+h3 {
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px; }
+
+h4 {
+  font-size: 20px;
+  line-height: 35px; }
+
+h5 {
+  font-size: 18px;
+  line-height: 21px; }
+
+.header {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  color: #fff; }
+  .header__menu {
+    margin: 0 250px 0 250px; }
+  .header__left a {
+    float: left;
+    margin-top: 22px;
+    color: #fff; }
+  .header__item a {
+    float: right;
+    margin: 37px 28px 0 0;
+    color: #fff;
+    padding: 5px;
+    font-family: 'Roboto-Bold', sans-serif;
+    transition: all 0.3s; }
+    .header__item a:hover {
+      border-bottom: 2px solid #fff; }
+  .header__title {
+    margin: 400px 250px 0 240px;
+    float: left;
+    clear: both; }
+    .header__title h1 {
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    .header__title h5 {
+      margin-bottom: 20px; }
+
+.main {
+  height: 2000px;
+  margin: 0 250px 0 250px;
+  font-family: "Roboto-Regular", sans-serif; }
+  .main__tab {
+    margin-top: 30px; }
+  .main__article {
+    margin-top: 80px;
+    float: left;
+    clear: both; }
+    .main__article .article__block {
+      width: 940px;
+      margin-bottom: 40px; }
+      .main__article .article__block .article__title {
+        margin: 0 0 15px -10px; }
+      .main__article .article__block .article__text {
+        text-align: left;
+        line-height: 30px;
+        margin: 0 0 40px -10px; }
+  .main__room {
+    margin-right: -18px;
+    margin-bottom: 5px;
+    float: left;
+    clear: both; }
+    .main__room .room__title {
+      margin: 0 0 30px -10px; }
+    .main__room .room__card {
+      margin: 0 0 50px 0;
+      float: left;
+      height: 400px;
+      width: 460px;
+      border-radius: 8px;
+      transition: all 0.3s; }
+      .main__room .room__card:hover {
+        box-shadow: 0 1px 20px 0 rgba(78, 78, 78, 0.5); }
+      .main__room .room__card .card__title {
+        margin: 8px 20px 20px 10px; }
+      .main__room .room__card .card__price {
+        margin: 8px 0 0 10px;
+        float: left; }
+      .main__room .room__card .card__btn {
+        margin: 10px 30px 0 0;
+        float: right; }
+      .main__room .room__card img {
+        width: 460px;
+        height: 248px;
+        margin-left: -7px; }
+      .main__room .room__card:not(:last-child) {
+        margin-right: 20px; }
+  .main__rates {
+    float: left;
+    clear: both; }
+    .main__rates .rates__title {
+      margin-bottom: 43px; }
+  .main__feedback {
+    padding: 30px;
+    float: left;
+    clear: both;
+    width: 880px; }
+    .main__feedback .card__name {
+      float: left;
+      margin-bottom: 20px;
+      font-weight: 700; }
+    .main__feedback .card__gender {
+      float: left;
+      margin-left: 18px; }
+      .main__feedback .card__gender::after {
+        content: "Very good";
+        margin-left: 60px;
+        color: #4e92ff;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold; }
+    .main__feedback .card__date {
+      float: right;
+      margin-bottom: 20px;
+      margin-right: 10px; }
+    .main__feedback .card__feedback {
+      float: left;
+      clear: both;
+      margin-bottom: 78px; }
+
+.footer {
+  margin: 0 250px 85px 250px;
+  float: left;
+  clear: both; }
+  .footer__help, .footer__discover, .footer__hosting, .footer__community {
+    float: left;
+    width: 220px; }
+    .footer__help:not(:last-child), .footer__discover:not(:last-child), .footer__hosting:not(:last-child), .footer__community:not(:last-child) {
+      margin-right: 130px; }
+  .footer__title {
+    margin-bottom: 30px;
+    font-weight: 700; }
+  .footer__item {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px; }
+  .footer__link {
+    color: #333333; }
+    .footer__link:hover {
+      border-bottom: 1px solid #333333; }
+
+.checkbox--bad {
+  font-family: "Roboto-Bold", sans-serif;
+  width: 850px;
+  margin-bottom: 20px;
+  font-size: 20px; }
+  .checkbox--bad .checkbox__item {
+    display: inline-block;
+    position: absolute;
+    opacity: 0; }
+    .checkbox--bad .checkbox__item + label {
+      position: relative;
+      left: -45px;
+      margin-right: 20px;
+      margin-bottom: 33px;
+      cursor: pointer;
+      padding: 0;
+      float: left;
+      color: #000; }
+    .checkbox--bad .checkbox__item + label::before {
+      content: '';
+      margin: 0 15px 0 35px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 27px;
+      height: 27px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #000; }
+    .checkbox--bad .checkbox__item:hover + label::before {
+      background: #000; }
+    .checkbox--bad .checkbox__item:checked + label::before {
+      background: #000;
+      border: none;
+      width: 31px;
+      height: 31px; }
+    .checkbox--bad .checkbox__item:disabled + label {
+      color: #4e92ff;
+      cursor: auto; }
+    .checkbox--bad .checkbox__item:disabled + label::before {
+      box-shadow: none;
+      background: #ddd; }
+    .checkbox--bad .checkbox__item:checked + label::after {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 12px;
+      background: white;
+      width: 4px;
+      height: 4px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg); }
+
+.checkbox--good {
+  font-family: "Roboto-Bold", sans-serif;
+  width: 850px;
+  margin-bottom: 20px;
+  font-size: 20px; }
+  .checkbox--good .checkbox__item {
+    display: inline-block;
+    position: absolute;
+    opacity: 0; }
+    .checkbox--good .checkbox__item + label {
+      position: relative;
+      left: -45px;
+      margin-right: 20px;
+      margin-bottom: 33px;
+      cursor: pointer;
+      padding: 0;
+      float: left;
+      color: #f05b5b; }
+    .checkbox--good .checkbox__item + label::before {
+      content: '';
+      margin: 0 15px 0 35px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 27px;
+      height: 27px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #000; }
+    .checkbox--good .checkbox__item:hover + label::before {
+      background: #f05b5b; }
+    .checkbox--good .checkbox__item:checked + label::before {
+      background: #f05b5b;
+      border: none;
+      width: 31px;
+      height: 31px; }
+    .checkbox--good .checkbox__item:disabled + label {
+      color: #4e92ff;
+      cursor: auto; }
+    .checkbox--good .checkbox__item:disabled + label::before {
+      box-shadow: none;
+      background: #ddd; }
+    .checkbox--good .checkbox__item:checked + label::after {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 12px;
+      background: white;
+      width: 4px;
+      height: 4px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg); }
+
+.checkbox--veryGood {
+  font-family: "Roboto-Bold", sans-serif;
+  width: 850px;
+  margin-bottom: 20px;
+  font-size: 20px; }
+  .checkbox--veryGood .checkbox__item {
+    display: inline-block;
+    position: absolute;
+    opacity: 0; }
+    .checkbox--veryGood .checkbox__item + label {
+      position: relative;
+      left: -45px;
+      margin-right: 20px;
+      margin-bottom: 33px;
+      cursor: pointer;
+      padding: 0;
+      float: left;
+      color: #4e92ff; }
+    .checkbox--veryGood .checkbox__item + label::before {
+      content: '';
+      margin: 0 15px 0 35px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 27px;
+      height: 27px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #000; }
+    .checkbox--veryGood .checkbox__item:hover + label::before {
+      background: #4e92ff; }
+    .checkbox--veryGood .checkbox__item:checked + label::before {
+      background: #4e92ff;
+      border: none;
+      width: 31px;
+      height: 31px; }
+    .checkbox--veryGood .checkbox__item:disabled + label {
+      color: #4e92ff;
+      cursor: auto; }
+    .checkbox--veryGood .checkbox__item:disabled + label::before {
+      box-shadow: none;
+      background: #ddd; }
+    .checkbox--veryGood .checkbox__item:checked + label::after {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 12px;
+      background: white;
+      width: 4px;
+      height: 4px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg); }
+
+.checkbox--excellent {
+  font-family: "Roboto-Bold", sans-serif;
+  width: 850px;
+  margin-bottom: 20px;
+  font-size: 20px; }
+  .checkbox--excellent .checkbox__item {
+    display: inline-block;
+    position: absolute;
+    opacity: 0; }
+    .checkbox--excellent .checkbox__item + label {
+      position: relative;
+      left: -45px;
+      margin-right: 20px;
+      margin-bottom: 33px;
+      cursor: pointer;
+      padding: 0;
+      float: left;
+      color: #f89052; }
+    .checkbox--excellent .checkbox__item + label::before {
+      content: '';
+      margin: 0 15px 0 35px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 27px;
+      height: 27px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #000; }
+    .checkbox--excellent .checkbox__item:hover + label::before {
+      background: #f89052; }
+    .checkbox--excellent .checkbox__item:checked + label::before {
+      background: #f89052;
+      border: none;
+      width: 31px;
+      height: 31px; }
+    .checkbox--excellent .checkbox__item:disabled + label {
+      color: #4e92ff;
+      cursor: auto; }
+    .checkbox--excellent .checkbox__item:disabled + label::before {
+      box-shadow: none;
+      background: #ddd; }
+    .checkbox--excellent .checkbox__item:checked + label::after {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 12px;
+      background: white;
+      width: 4px;
+      height: 4px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg); }
+
+.checkbox--brilliant {
+  font-family: "Roboto-Bold", sans-serif;
+  width: 850px;
+  margin-bottom: 20px;
+  font-size: 20px; }
+  .checkbox--brilliant .checkbox__item {
+    display: inline-block;
+    position: absolute;
+    opacity: 0; }
+    .checkbox--brilliant .checkbox__item + label {
+      position: relative;
+      left: -45px;
+      margin-right: 20px;
+      margin-bottom: 33px;
+      cursor: pointer;
+      padding: 0;
+      float: left;
+      color: #60cf57; }
+    .checkbox--brilliant .checkbox__item + label::before {
+      content: '';
+      margin: 0 15px 0 35px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 27px;
+      height: 27px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #000; }
+    .checkbox--brilliant .checkbox__item:hover + label::before {
+      background: #60cf57; }
+    .checkbox--brilliant .checkbox__item:checked + label::before {
+      background: #60cf57;
+      border: none;
+      width: 31px;
+      height: 31px; }
+    .checkbox--brilliant .checkbox__item:disabled + label {
+      color: #4e92ff;
+      cursor: auto; }
+    .checkbox--brilliant .checkbox__item:disabled + label::before {
+      box-shadow: none;
+      background: #ddd; }
+    .checkbox--brilliant .checkbox__item:checked + label::after {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 12px;
+      background: white;
+      width: 4px;
+      height: 4px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg); }
+
+.tab .tab__title {
+  float: left;
+  border-bottom: 1px solid #d8d8d8;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  color: #aca8a8;
+  font-weight: 500;
+  padding: 0 38px 14px 0; }
+
+.tab :checked + label {
+  border-bottom: 2px solid #60cf57;
+  color: #5d5d5d; }
+
+.tab input[type="radio"] {
+  display: none; }
+
+.header {
+  background-image: url(../../img/Banner_img.png); }
+
+.btn {
+  width: 180px;
+  height: 49px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #4e92ff; }
+  .btn:hover {
+    background-color: #447fde; }
+  .btn:active {
+    background-color: #3b6fc2; }
+
+.main__feedback {
+  padding: 30px;
+  float: left;
+  clear: both;
+  width: 880px;
+  margin-bottom: 90px; }
+  .main__feedback .card__name {
+    float: left;
+    margin-bottom: 20px;
+    font-weight: 700; }
+  .main__feedback .card__gender {
+    float: left;
+    margin-left: 18px; }
+    .main__feedback .card__gender::after {
+      content: "Very good";
+      margin-left: 60px;
+      color: #4e92ff;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: bold; }
+  .main__feedback .card__date {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 10px; }
+  .main__feedback .card__feedback {
+    float: left;
+    clear: both;
+    margin-bottom: 78px; }
+
+.pagination {
+  float: left;
+  width: 562px;
+  margin-left: 170px;
+  margin-top: -98px;
+  margin-bottom: 118px;
+  text-decoration: none;
+  list-style-type: none; }
+  .pagination__title {
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    margin-right: 20px;
+    padding-top: 10px;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #5d5d5d;
+    background-color: #f6f6f6;
+    transition: all 0.3s; }
+  .pagination__item--arrow {
+    float: left;
+    margin: 0 20px 0;
+    padding-top: 15px;
+    width: 35px;
+    height: 35px;
+    pointer-events: none; }
+  :checked + .pagination__title {
+    background-color: #4e92ff;
+    color: #fff; }
+  .pagination :hover {
+    background-color: #e0e0e0; }
+  .pagination input[type="radio"] {
+    display: none; }

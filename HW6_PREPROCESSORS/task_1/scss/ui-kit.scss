@@ -1,0 +1,22 @@
+@import "_mixins";
+@import "_extend";
+@import "_reset";
+@import "_typography";
+@import "_vars";
+@import "_color-matrix";
+
+.tabs {
+  @include tab($primary);
+}
+
+.btn {
+  @include btn($primary,$secondary--hover,$danger--active);
+}
+
+.checkbox {
+  @include checkbox($checkbox--primary,$checkbox-primary--disabled);
+}
+
+.pagination {
+  @include pagination($danger);
+}

@@ -1,0 +1,179 @@
+@import "../../task_1/scss/reset";
+@import "./mixins";
+@import "./variables/vars1";
+@import "./variables/vars2";
+@import "./variables/vars3";
+@import "./color-matrix/color-matrix1";
+@import "./color-matrix/color-matrix2";
+@import "./color-matrix/color-matrix3";
+@import "./typography";
+
+.header {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  color: $white;
+
+  &__menu {
+    margin: 0 250px 0 250px;
+  }
+
+  &__left a {
+    @include left;
+
+    margin-top: 22px;
+    color: $white;
+  }
+
+  &__item a {
+    @include right;
+
+    margin: 37px 28px 0 0;
+    color: $white;
+    padding: 5px;
+    font-family: 'Roboto-Bold', sans-serif;
+    transition: all 0.3s;
+
+    &:hover {
+      border-bottom: 2px solid $white;
+    }
+  }
+
+  &__title {
+    margin: 400px 250px 0 240px;
+
+    @include clearLeft;
+
+    h1 {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.main {
+  height: 2000px;
+  margin: 0 250px 0 250px;
+  font-family: "Roboto-Regular", sans-serif;
+
+  &__tab {
+    margin-top: 30px;
+  }
+
+  &__article {
+    margin-top: 80px;
+
+    @include clearLeft;
+
+    .article__block {
+      width: 940px;
+      margin-bottom: 40px;
+
+      .article__title {
+        margin: 0 0 15px -10px;
+      }
+
+      .article__text {
+        text-align: left;
+        line-height: 30px;
+        margin: 0 0 40px -10px;
+      }
+    }
+  }
+
+  &__room {
+    margin-right: -18px;
+    margin-bottom: 5px;
+
+    @include clearLeft;
+
+    .room__title {
+      margin: 0 0 30px -10px;
+    }
+
+    .room__card {
+      @include roomCard;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__rates {
+    @include clearLeft;
+
+    .rates__title {
+      margin-bottom: 43px;
+    }
+  }
+
+  &__feedback {
+    padding: 30px;
+
+    @include clearLeft;
+    @include feedback__card($veryGood,$primary);
+  }
+}
+
+.footer {
+  margin: 0 250px 85px 250px;
+
+  @include clearLeft;
+
+  &__help,
+  &__discover,
+  &__hosting,
+  &__community {
+    @include left;
+
+    width: 220px;
+
+    &:not(:last-child) {
+      margin-right: 130px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    color: $gray;
+
+    &:hover {
+      border-bottom: 1px solid $gray;
+    }
+  }
+}
+
+.checkbox--bad {
+  @include checkbox($checkbox--black);
+}
+
+.checkbox--good {
+  @include checkbox($checkbox--danger);
+}
+
+.checkbox--veryGood {
+  @include checkbox($checkbox--primary);
+}
+
+.checkbox--excellent {
+  @include checkbox($checkbox--secondary);
+}
+
+.checkbox--brilliant {
+  @include checkbox($checkbox--success);
+}

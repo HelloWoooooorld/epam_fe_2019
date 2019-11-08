@@ -1,0 +1,37 @@
+// primary-color
+$primary: $blue;
+$primary--hover: $blue--hover;
+$primary--active: $blue--active;
+// secondary
+$secondary: $orange;
+$secondary--hover: $orange--hover;
+$secondary--active: $orange--active;
+// danger-color
+$danger: $red;
+$danger--hover: $red--hover;
+$danger--active: $red--active;
+// info
+$info: $lightBlue;
+$info--hover: $lightBlue--hover;
+$info--active: $lightBlue--active;
+// warning
+$warning: $yellow;
+$warning--hover: $yellow--hover;
+$warning--active: $yellow--active;
+// success
+$success: $green;
+$success--hover: $green--hover;
+$success--active: $green--active;
+
+// checkbox
+$checkbox--primary: $blue;
+$checkbox--secondary: $orange;
+$checkbox--success: $green;
+$checkbox--danger: $red;
+$checkbox--black: $black;
+// checkbox disabled
+$checkbox-black--disabled: rgba(60, 59, 59, 0.59);
+$checkbox-primary--disabled:rgba(78, 146, 255, 0.59);
+$checkbox-secondary--disabled: rgba(246, 167, 120, 0.59);
+$checkbox-success--disabled: rgba(82, 190, 128, 0.59);
+$checkbox-danger--disabled: rgba(240, 91, 91, 0.59);
