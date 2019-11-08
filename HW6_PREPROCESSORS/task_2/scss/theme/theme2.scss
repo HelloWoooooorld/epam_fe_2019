@@ -1,0 +1,29 @@
+@import "../main.scss";
+@import "../variables/vars2";
+@import "../color-matrix/color-matrix2";
+
+.tab {
+  @include tab($danger);
+}
+
+.header {
+  background-image: url(../../img/Banner_img-2.png);
+}
+
+.btn {
+  @include btn($secondary,$secondary--hover,$secondary--active);
+}
+
+.main__feedback {
+  padding: 30px;
+
+  @include clearLeft;
+  @include feedback__card($excellent,$secondary);
+
+  margin-bottom: 90px;
+}
+
+.pagination {
+  @include left;
+  @include pagination($secondary);
+}

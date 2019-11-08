@@ -1,0 +1,29 @@
+@import "../main.scss";
+@import "../variables/vars3";
+@import "../color-matrix/color-matrix3";
+
+.tab {
+  @include tab($success);
+}
+
+.header {
+  background-image: url(../../img/Banner_img-3.png);
+}
+
+.btn {
+  @include btn($info,$info--hover,$info--active);
+}
+
+.main__feedback {
+  padding: 30px;
+
+  @include clearLeft;
+  @include feedback__card($brilliant,$success);
+
+  margin-bottom: 90px;
+}
+
+.pagination {
+  @include left;
+  @include pagination($success);
+}
