@@ -5,6 +5,11 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
+img:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
 @font-face {
   font-family: 'Helvetica';
   src: url('../fonts/9202.otf');
@@ -41,6 +46,13 @@ body {
   margin: 0 15px 15px 0;
 }
 
+.album__song,
+.album__executor,
+.album__album,
+.player__pause {
+  margin-left: 15px;
+}
+
 .album:first-child {
   height: 190px;
   width: 345px;
@@ -58,19 +70,17 @@ body {
   line-height: 22px;
   color: #d0021b;
   margin: 0 0 -10px 0;
+  transition: all 0.3s;
+}
+
+.album__executor:hover {
+  color: black;
 }
 
 .album__album {
   font-size: 14px;
   line-height: 19px;
   color: #bebebe;
-}
-
-.album__song,
-.album__executor,
-.album__album,
-.player__pause {
-  margin-left: 15px;
 }
 
 .album__image {
@@ -201,7 +211,8 @@ body {
   margin-top: 0;
 }
 
-.color__btn {
+.color__btn,
+.small__btn {
   width: 100px;
   height: 45px;
   color: #fff;
@@ -210,18 +221,68 @@ body {
   margin: 15px 15px 15px 0;
   font-size: 15px;
   line-height: 22px;
+  outline: none;
+  transition: all 0.3s;
 }
 
 .color__btn--red {
   background-image: linear-gradient(to right, #be5764, #b64f5c, #ae4753, #a63f4b, #9e3743);
 }
 
+.color__btn--red:hover {
+  background-image: linear-gradient(to right, #be5764, #b64f5c, #ae4753, #a63f4b, #9e3743);
+  width: 115px;
+  height: 50px;
+  cursor: pointer;
+}
+
 .color__btn--blue {
   background-image: linear-gradient(to right, #34a8b8, #42b1b8, #52bbb8, #64c3b7, #76ccb6);
 }
 
+.color__btn--blue:hover {
+  background-image: linear-gradient(to right, #34a8b8, #42b1b8, #52bbb8, #64c3b7, #76ccb6);
+  width: 115px;
+  height: 50px;
+  cursor: pointer;
+}
+
 .color__btn--orange {
   background-color: #f9ab16;
+}
+
+.color__btn--orange:hover {
+  background-color: #f9ab16;
+  width: 115px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.small__btn--red {
+  background-image: linear-gradient(to right, #be5764, #b64f5c, #ae4753, #a63f4b, #9e3743);
+}
+
+.small__btn--red:hover {
+  background-image: linear-gradient(to left, #be5764, #b64f5c, #ae4753, #a63f4b, #9e3743);
+  cursor: pointer;
+}
+
+.small__btn--blue {
+  background-image: linear-gradient(to right, #34a8b8, #42b1b8, #52bbb8, #64c3b7, #76ccb6);
+}
+
+.small__btn--blue:hover {
+  background-image: linear-gradient(to left, #34a8b8, #42b1b8, #52bbb8, #64c3b7, #76ccb6);
+  cursor: pointer;
+}
+
+.small__btn--orange {
+  background-color: #f9ab16;
+}
+
+.small__btn--orange:hover {
+  background-color: #f9ab16;
+  cursor: pointer;
 }
 
 .icon__card {
@@ -263,6 +324,7 @@ body {
   height: 160px;
   width: 345px;
   margin: 0 15px 15px 0;
+  box-shadow: 1px 18px 15px -13px rgba(0, 0, 0, 0.75);
 }
 
 .record__image {
@@ -299,6 +361,18 @@ body {
 .record__name,
 .record__play {
   margin-left: 15px;
+}
+
+.player__pause:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.record__play:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .record__image--orange {
