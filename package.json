@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "scss": "node-sass --watch HW7_FLEXBOX/scss/ -o  HW7_FLEXBOX/css/"
   },
   "keywords": [
     "RD",
