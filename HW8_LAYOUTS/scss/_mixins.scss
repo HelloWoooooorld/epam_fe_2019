@@ -1,0 +1,17 @@
+@mixin btn($color, $hover) {
+  height: 43px;
+  width: 280px;
+  border-radius: 3px;
+  background-color: $color;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  box-shadow: 0 3px 4px 0 rgba(72, 72, 72, 0.5);
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $hover;
+  }
+}
