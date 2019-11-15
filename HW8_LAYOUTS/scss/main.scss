@@ -18,16 +18,19 @@
     text-align: center;
 
     .header__name {
+      font-family: 'Lucida Grande', sans-serif;
+      line-height: 71px;
       font-size: 3.75em;
-      font-weight: bold;
       margin-bottom: 60px;
     }
 
     .header__title {
       margin-bottom: 20px;
+      font-weight: 300;
     }
 
     .header__subtitle {
+      font-weight: 300;
       width: 533px;
       margin-bottom: 60px;
       line-height: 27px;
@@ -104,10 +107,12 @@
       margin-right: 140px;
 
       .feature__title {
+        font-family: 'Lucida Grande', sans-serif;
         margin-bottom: 35px;
         width: 460px;
-        font-size: 2.2em;
-        line-height: 46px;
+        font-size: 1.8em;
+        line-height: 40px;
+        font-weight: 400;
       }
 
       .feature__text {
@@ -142,11 +147,14 @@
   }
 
   &__features {
+    font-family: 'Libre Franklin', sans-serif;
     margin-bottom: 86px;
 
     .features__title {
+      font-family: 'Lucida Grande', sans-serif;
       margin-bottom: 20px;
-      height: 54px;
+      font-size: 1.8em;
+      line-height: 46px;
       text-align: center;
     }
 
@@ -156,7 +164,7 @@
       color: $color-text;
       font-size: 1em;
       line-height: 27px;
-      text-align: center;
+      font-weight: 500;
     }
 
     .features__content {
@@ -195,7 +203,8 @@
         height: 54px;
         width: 485px;
         color: $color-text;
-        font-family: "Libre Franklin", sans-serif;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 600;
         font-size: 1em;
         line-height: 27px;
       }
@@ -246,7 +255,9 @@
     }
 
     .questions__title {
+      font-family: 'Lucida Grande', sans-serif;
       color: $color-text;
+      font-weight: 600;
       font-size: 2.2em;
       line-height: 46px;
       margin-bottom: 20px;

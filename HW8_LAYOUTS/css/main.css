@@ -1,5 +1,5 @@
 /* stylelint-disable */
-@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400&display=swap");
 html,
 body,
 div,
@@ -405,6 +405,13 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
+@font-face {
+  font-family: 'Lucida Grande';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../ofont.ru_Lucida_Grande.ttf) format("ttf"); }
+
 h1 {
   font-size: 2.2em;
   font-family: 'Libre Franklin', sans-serif; }
@@ -430,12 +437,15 @@ h3 {
     color: #fff;
     text-align: center; }
     .header__titles .header__name {
+      font-family: 'Lucida Grande', sans-serif;
+      line-height: 71px;
       font-size: 3.75em;
-      font-weight: bold;
       margin-bottom: 60px; }
     .header__titles .header__title {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-weight: 300; }
     .header__titles .header__subtitle {
+      font-weight: 300;
       width: 533px;
       margin-bottom: 60px;
       line-height: 27px; }
@@ -499,10 +509,12 @@ h3 {
   .main__feature .feature__content {
     margin-right: 140px; }
     .main__feature .feature__content .feature__title {
+      font-family: 'Lucida Grande', sans-serif;
       margin-bottom: 35px;
       width: 460px;
-      font-size: 2.2em;
-      line-height: 46px; }
+      font-size: 1.8em;
+      line-height: 40px;
+      font-weight: 400; }
     .main__feature .feature__content .feature__text {
       margin-bottom: 25px;
       width: 460px;
@@ -526,10 +538,13 @@ h3 {
   width: 260px; }
 
 .main__features {
+  font-family: 'Libre Franklin', sans-serif;
   margin-bottom: 86px; }
   .main__features .features__title {
+    font-family: 'Lucida Grande', sans-serif;
     margin-bottom: 20px;
-    height: 54px;
+    font-size: 1.8em;
+    line-height: 46px;
     text-align: center; }
   .main__features .features__subtitle {
     margin: 0 auto;
@@ -537,7 +552,7 @@ h3 {
     color: #333;
     font-size: 1em;
     line-height: 27px;
-    text-align: center; }
+    font-weight: 500; }
   .main__features .features__content {
     margin-top: 60px;
     display: flex;
@@ -564,7 +579,8 @@ h3 {
       height: 54px;
       width: 485px;
       color: #333;
-      font-family: "Libre Franklin", sans-serif;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: 600;
       font-size: 1em;
       line-height: 27px; }
     .main__features .features_items .feature__icon {
@@ -600,7 +616,9 @@ h3 {
     opacity: 0;
     z-index: -1; }
   .main__questions .questions__title {
+    font-family: 'Lucida Grande', sans-serif;
     color: #333;
+    font-weight: 600;
     font-size: 2.2em;
     line-height: 46px;
     margin-bottom: 20px; }
