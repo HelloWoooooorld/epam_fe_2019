@@ -1,0 +1,77 @@
+@mixin button($width,$background, $color) {
+  width: $width;
+  height: 45px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color;
+  background-color: $background;
+  border: 1px solid $black;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #393737;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+@mixin feature-block-right($color1, $color2, $color3) {
+  width: 260px;
+  height: 184px;
+  background-color: $color3;
+  border-radius: 5px;
+  background-image: linear-gradient(108deg, $color1, $color2);
+  clip-path: polygon(80% 0, 80% 20%, 100% 20%, 100% 100%, 0 100%, 0 0);
+  margin-bottom: 20px;
+}
+
+@mixin feature-block-left($color1, $color2, $color3) {
+  width: 260px;
+  height: 184px;
+  background-color: $color3;
+  border-radius: 5px;
+  background-image: linear-gradient(108deg, $color1, $color2);
+  clip-path: polygon(20% 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 20%, 20% 20%);
+  margin-bottom: 20px;
+}
+
+@mixin title-underline($width) {
+  display: inline-block;
+  width: $width;
+  height: 8px;
+  border-left: 1px solid $black;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $black;
+  margin-bottom: 15px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height: 1px;
+    background-color: $black;
+  }
+
+  &::before {
+    left: -3px;
+  }
+
+  &::after {
+    right: -3px;
+  }
+}
+
+@mixin social__links($pos1, $pos2) {
+  background-image: url(../img/css_sprites.png);
+  width: 25px;
+  height: 23px;
+  display: inline-block;
+  background-position: $pos1 $pos2;
+  margin-right: 13px;
+}
